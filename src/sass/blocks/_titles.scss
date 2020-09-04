@@ -4,4 +4,24 @@
   font-size: 30px;
   font-weight: 700;
   text-align: center;
+  &_left {
+    font-size: 36px;
+    text-align: left;
+    color: #fff;
+  }
+}
+@media (max-width: 825px) {
+  .title {
+    &_left {
+      font-size: 30px;
+    }
+  }
+}
+@media (max-width: 576px) {
+  .title {
+    &_left {
+      text-align: center;
+      font-size: 22px;
+    }
+  }
 }
