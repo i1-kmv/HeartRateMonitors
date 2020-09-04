@@ -5,7 +5,15 @@
 .container {
     max-width: 950px;
     margin: 0 auto;
+    
 }
+@media (max-width: 991px) {
+    .container {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+}
+
 @import 'blocks/promo';
 @import 'blocks/header.scss';
 @import 'blocks/buttons';

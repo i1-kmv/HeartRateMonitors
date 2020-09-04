@@ -34,3 +34,27 @@
       align-items: flex-end;
   }
 }
+@media(max-width: 768px) {
+   .header {
+       &__official {
+           display: none;
+       }
+   }  
+}
+@media(max-width: 480px) {
+    .header {
+       &__logo {
+           width: 160px;
+       }
+       &__phone {
+           font-size: 16px;
+       }
+    }  
+ }
+ @media(max-width: 350px) {
+    .header {
+        &__phone {
+            font-size: 14px;
+        }
+     }    
+}
