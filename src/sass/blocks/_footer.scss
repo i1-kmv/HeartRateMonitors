@@ -43,6 +43,9 @@
       img {
           height: 27px;
       }
+      &:hover {
+        background-color:  orange
+      }
   }
   &__social {
       display: flex;
