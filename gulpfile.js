@@ -4,6 +4,13 @@ const sass        = require('gulp-sass');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require("gulp-rename");
+const ghPages = require('gulp-gh-pages');
+
+
+gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+      .pipe(ghPages());
+});
 
 gulp.task('server', function() {
 

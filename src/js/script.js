@@ -11,7 +11,15 @@ $(document).ready(function(){
                     dots: true,
                     arrows: false
                 }
-            }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    dots: false,
+                    arrows: false
+                }
+            }    
+         
         ]
     });
     
@@ -92,7 +100,7 @@ $(document).ready(function(){
         }
     });
 
-    $("a[href^='#']").click(function(){
+    $("a[href^='#up']").click(function(){
         const _href = $(this).attr("href");
         $("html, body").animate({scrollTop: $(_href).offset().top+"px"});
         return false;
